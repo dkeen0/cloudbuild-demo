@@ -14,8 +14,8 @@
 
 # [START cloudbuild_quickstart_automate]
 steps:
-  - name: golang
-    args: ['go', 'run', 'main.go']
+#   - name: golang
+#     args: ['go', 'run', 'main.go']
   - name: google/cloud-sdk
-    args: ['gcloud', 'builds', 'submit', '--pack', 'image=gcr.io/appmod-demo-env/gohello']
+    args: ['gcloud', 'builds', 'submit', '--pack', 'image=gcr.io/appmod-demo-env/gohello:$SHORT_SHA']
 # [END cloudbuild_quickstart_automate]
