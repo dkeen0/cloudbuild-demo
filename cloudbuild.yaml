@@ -17,5 +17,5 @@ steps:
 #   - name: golang
 #     args: ['go', 'run', 'main.go']
   - name: google/cloud-sdk
-    args: ['gcloud', 'builds', 'submit', '--pack', 'image=gcr.io/appm-demo-env1/gohello:$TAG_NAME']
+    args: ['gcloud', 'builds', 'submit', '--pack', 'image=gcr.io/app-demo-env1/gohello:$TAG_NAME']
 # [END cloudbuild_quickstart_automate]
